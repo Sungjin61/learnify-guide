@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="ko" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light only" />
   <meta name="theme-color" content="#FAFAF7" />
   <title>LG Learnify — 사용자 가이드</title>
+  <!-- v2: UTF-8 BOM 추가 + http-equiv 중복 선언 (사내망 한글 깨짐 대응) -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +68,7 @@
       top: 96px;
       width: 220px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
+      font-size: 14px;
       line-height: 2.2;
       color: var(--learnify-ink-500);
       letter-spacing: 0.12em;
@@ -568,7 +571,7 @@
       border: none;
     }
     .page-nav-logo img {
-      height: 24px;
+      height: 36px;
       width: auto;
       display: block;
     }
@@ -784,7 +787,7 @@
       section { padding: 80px 0; }
       .page-nav-inner { padding: 12px 24px; }
       .page-nav-cta { padding: 8px 14px; font-size: 12.5px; }
-      .page-nav-logo img { height: 20px; }
+      .page-nav-logo img { height: 30px; }
       .cta-banner { padding: 64px 0; }
       .cta-banner .cta-lede { font-size: 16px; }
       .cta-button { padding: 14px 22px; font-size: 15px; }
@@ -920,25 +923,6 @@
         <div class="feature-head">
           <div class="feature-num">2.1</div>
           <div class="feature-title">
-            <h3>지식검색</h3>
-            <p>SW College 업무지식 문서에서 핵심 답변을 추출합니다.</p>
-          </div>
-        </div>
-        <table class="feature-spec">
-          <tr><th>검색 대상</th><td>SW College 업무지식 문서 (swcollege.lge.com)</td></tr>
-          <tr><th>응답 방식</th><td>관련 문서의 핵심 내용을 요약 + 출처 링크 5개 제공</td></tr>
-          <tr><th>이런 질문에</th><td>「AI Specialist에 대해 알려줘」 · 「SW Bootcamp 일정을 알려줘」</td></tr>
-        </table>
-        <div class="mini-chat">
-          <div class="msg user"><div class="bubble">SW프로그래밍 역량인증시험 신청 방법이 궁금해</div></div>
-          <div class="msg ai"><div class="bubble"><strong>SW프로그래밍 역량인증시험 신청 방법 안내</strong><br><br><strong>신청 사이트</strong><br><a href="https://codepro.lge.com" target="_blank" rel="noopener noreferrer">https://codepro.lge.com</a> 에서 신청할 수 있습니다.<div class="source-dots"><span class="label-spark">✦</span><span>출처 5개</span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div></div>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-head">
-          <div class="feature-num">2.2</div>
-          <div class="feature-title">
             <h3>학습 과정 추천</h3>
             <p>3개 학습 플랫폼에서 가장 관련도 높은 과정을 각 1개씩 추천합니다.</p>
           </div>
@@ -956,7 +940,7 @@
 
       <div class="feature">
         <div class="feature-head">
-          <div class="feature-num">2.3</div>
+          <div class="feature-num">2.2</div>
           <div class="feature-title">
             <h3>학습 로드맵 추천</h3>
             <p>난이도별로 단계적 학습 경로(All Levels → Beginner → Intermediate → Expert)를 설계합니다.</p>
@@ -970,6 +954,25 @@
         <div class="mini-chat">
           <div class="msg user"><div class="bubble">React 기반 프론트엔드 개발 역량을 쌓기 위한 로드맵을 수립해줘</div></div>
           <div class="msg ai"><div class="bubble"><strong>React 프론트엔드 로드맵</strong>입니다.<div style="margin-top:10px"><div class="roadmap-row"><span class="level">All Levels</span><span class="title">React Project: Build a Complete App</span></div><div class="roadmap-row"><span class="level">Beginner</span><span class="title">Modern React with Redux</span></div><div class="roadmap-row"><span class="level">Intermediate</span><span class="title">Advanced React Patterns &amp; Hooks</span></div><div class="roadmap-row"><span class="level">Expert</span><span class="title">React Performance &amp; Architecture</span></div></div></div></div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head">
+          <div class="feature-num">2.3</div>
+          <div class="feature-title">
+            <h3>지식검색</h3>
+            <p>SW College 업무지식 문서에서 핵심 답변을 추출합니다.</p>
+          </div>
+        </div>
+        <table class="feature-spec">
+          <tr><th>검색 대상</th><td>SW College 업무지식 문서 (swcollege.lge.com)</td></tr>
+          <tr><th>응답 방식</th><td>관련 문서의 핵심 내용을 요약 + 출처 링크 5개 제공</td></tr>
+          <tr><th>이런 질문에</th><td>「AI Specialist에 대해 알려줘」 · 「SW Bootcamp 일정을 알려줘」</td></tr>
+        </table>
+        <div class="mini-chat">
+          <div class="msg user"><div class="bubble">SW프로그래밍 역량인증시험 신청 방법이 궁금해</div></div>
+          <div class="msg ai"><div class="bubble"><strong>SW프로그래밍 역량인증시험 신청 방법 안내</strong><br><br><strong>신청 사이트</strong><br><a href="https://codepro.lge.com" target="_blank" rel="noopener noreferrer">https://codepro.lge.com</a> 에서 신청할 수 있습니다.<div class="source-dots"><span class="label-spark">✦</span><span>출처 5개</span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div></div>
         </div>
       </div>
     </div>
@@ -1153,7 +1156,7 @@
       <p class="lede">사용 중 자주 만나는 상황과 대처법.</p>
 
       <div class="faq-stack">
-        <div class="faq-item open">
+        <div class="faq-item">
           <div class="faq-q">
             <span>「학습 컨텐츠 DB 검색 결과, [주제] 과정은 찾을 수 없습니다.」 라고 나와요.</span>
             <span class="icon">＋</span>
